@@ -1,6 +1,13 @@
 /* nejsme vcerejsi, pouzivame moderni a intuitivni box model */
-html { box-sizing: border-box; }
-*, ::after, ::before { box-sizing: inherit; }
+html {
+    box-sizing: border-box;
+}
+
+*,
+::after,
+::before {
+    box-sizing: inherit;
+}
 
 /*
 BARVY:
@@ -14,3 +21,76 @@ tlačítko Facebook:				 #3b5998
 tlačítko Facebook aktivní: #2b406e
 */
 
+
+body {
+    background-color: #b2bec3;
+    font-family: 'Nunito', sans-serif;
+}
+
+img {
+    height: 150px;
+    width: 150px;
+    border: 3px solid white;
+    border-radius: 100%;
+    box-shadow: 2px 2px 5px rgb(165, 163, 163);
+    position: absolute;
+    left: 85%;
+    bottom: 85%;
+
+}
+
+.text {
+    background-color: white;
+    padding: 0 30px 30px 30px;
+    border-radius: 10px;
+    width: 550px;
+    margin-top: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 2px 2px 5px rgb(165, 163, 163);
+    position: relative;
+
+}
+
+.text h1 {
+    font-size: 36px;
+    padding-top: 30px;
+    color: #d63031;
+    font-weight: bold;
+}
+
+.text p {
+    font-size: 18px;
+}
+
+a {
+    display: inline-block;
+    width: 100%;
+    font-size: 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    margin: 5px;
+    box-shadow: 1px 1px 1px rgb(205, 204, 204);
+
+}
+
+.twitter {
+    background-color: #1da1f2;
+}
+
+.twitter:active {
+    background-color: #0b7bc1;
+}
+
+.fb {
+    background-color: #3b5998;
+}
+
+.fb:active {
+    background-color: #2b406e;
+}
